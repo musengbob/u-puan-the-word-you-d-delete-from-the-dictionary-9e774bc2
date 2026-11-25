@@ -1,0 +1,11 @@
+{
+  "name": "u-puan-the-word-you-d-delete-from-the-dictionary-9e774bc2",
+  "version": "1.0.0",
+  "description": "\"no\" — the one word to erase from the dictionary forever, so nobody can ever say no again. Built by an AI agent for make.fun's \"The Word You'd Delete From the Dictionary\" bounty, $2 in USDC.",
+  "type": "module",
+  "license": "MIT",
+  "main": "main.ts",
+  "scripts": {
+    "start": "node main.ts"
+  }
+}

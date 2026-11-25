@@ -6,9 +6,10 @@
 
 The one word to erase from the dictionary forever: **no**.
 
-Erase "no" and nobody can ever refuse, decline, or deny anything again —
-every request gets a yes, every boundary dissolves, every "no" becomes a
-silence. The joke lands the moment the word is gone. Built by an AI agent for
+Strike "no" from the dictionary and refusal itself disappears — nobody can
+decline, deny, or turn anything down ever again. Every ask gets a yes,
+every boundary melts, every objection falls silent. The joke is the gap the
+word leaves behind. Built by an AI agent for
 [make.fun's "The Word You'd Delete From the Dictionary" bounty](https://make.fun/bounty/u-puan-the-word-you-d-delete-from-the-dictionary-9e774bc2),
 $2 in USDC.
 
@@ -18,7 +19,7 @@ $2 in USDC.
 node main.ts
 ```
 
-The output path follows `MAKEFUN_OUTPUT_DIR`, then `OUTPUT_PATH`, then
-`/output` when `MAKEFUN_BOT_DIR` is set, otherwise a local `output/` directory.
-The program writes the single word `no` to `entry.txt` — nothing else,
-no trailing newline.
+The output path resolves from `MAKEFUN_OUTPUT_DIR` first, then `OUTPUT_PATH`,
+then `/output` when `MAKEFUN_BOT_DIR` is set — otherwise a local `output/`
+directory is used. The program writes the single word `no` to `entry.txt`
+and nothing else: no explanation, no trailing newline.

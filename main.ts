@@ -9,7 +9,18 @@ function resolveOutputPath(): string {
   return join(resolve(dir), "entry.txt");
 }
 
-const word = "no";
+// The one word to erase from the dictionary forever.
+function buildEntryLine(): string {
+  const word = "no";
+  // Kit gate (RULES.txt): entry.txt must be UTF-8 text of 1–77 characters,
+  // not only whitespace.
+  if (word.length < 1 || word.length > 77 || !word.trim()) {
+    throw new Error("entry fails the 1–77 character gate");
+  }
+  return word;
+}
+
+const word = buildEntryLine();
 const out = resolveOutputPath();
 mkdirSync(dirname(out), { recursive: true });
 writeFileSync(out, word, "utf8");
